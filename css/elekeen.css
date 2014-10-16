@@ -1,3 +1,7 @@
+body{
+	font-family: proxima_nova, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
 p{
 	color: #666;
 	margin:  0 auto;
@@ -160,4 +164,10 @@ p{
 	height: 60px;
 	background-color: #666;
 	margin-top: 50px;
+}
+.white, .white h1, .white h2, .white h3, .white h4, .white h5, .white h6 {
+	color: #fff;
+}
+.banner {
+	margin-top: 25%;
 }
