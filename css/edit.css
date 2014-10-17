@@ -76,6 +76,12 @@
 	.home{
 		height: 300px;
 	}
+	.banner{
+		margin-top: 40%;
+	}
+	.container>div>h1{
+		font-size: 36px;
+	}
 	.container-fluid{
 		padding-right: 15px;
 		padding-left: 15px;
@@ -100,6 +106,9 @@
 		font-size: 14px;
 		line-height: 1.6;
 		margin-top: 15px;
+		max-width: 300px;
+		width: 96%;
+		margin: 0 auto;
 	}
 	.txt-img>img{
 		margin-right: 0;
