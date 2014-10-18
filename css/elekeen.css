@@ -1,10 +1,17 @@
+
+/*
+ * common styles
+ */
 body{
 	font-family: proxima_nova, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	/*font-size: 18px;*/
 }
-
 p{
 	color: #666;
-	margin:  0 auto;
+	/*margin:  0 auto;*/
+}
+.white, .white h1, .white h2, .white h3, .white h4, .white h5, .white h6, .white p {
+	color: #fff;
 }
 .center{
 	text-align: center;
@@ -22,12 +29,18 @@ p{
 .home{
 	width: 100%;
 	height: 600px;
-	background-image: url(../img/home-bg.jpg); 
+	background-image: url(../img/duck1.png);
+	background-size: cover;
+	background-repeat: none;
+	background-attachment: fixed;
+
 }
 .about,.product{
 	width: 100%;
 	margin: 0 auto;
 }
+
+/* about section */
 .about>p{
 	font-size: 18px;
 	line-height: 1.9;
@@ -36,6 +49,25 @@ p{
 	margin: 0 auto;
 	margin-top: 50px;
 }
+
+/* product section */
+.bg-map {
+	background-image: url('../img/map.png'); 
+	background-size: cover;
+	background-repeat: none;
+	background-attachment: fixed;
+}
+
+/* delivery section */
+.bg-station {
+	background-image: url('../img/trainstation.png'); 
+	background-size: cover;
+	background-repeat: none;
+	background-attachment: fixed;
+}
+
+
+
 .txt-img{
 	max-width: 1200px;
 	width: 100%;
@@ -164,10 +196,4 @@ p{
 	height: 60px;
 	background-color: #666;
 	margin-top: 50px;
-}
-.white, .white h1, .white h2, .white h3, .white h4, .white h5, .white h6 {
-	color: #fff;
-}
-.banner {
-	margin-top: 25%;
 }
