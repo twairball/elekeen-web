@@ -1,7 +1,9 @@
 body{
 	font-family: proxima_nova, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
-
+html,body{
+	height: 100%;
+}
 p{
 	color: #666;
 	margin:  0 auto;
@@ -9,11 +11,26 @@ p{
 .white, .white h1, .white h2, .white h3, .white h4, .white h5, .white h6 {
 	color: #fff;
 }
+.tel{
+	color: #fff;
+	font-size: 16px;
+	position: fixed;
+	text-align: right;
+	z-index: 199;
+	top: 15px;
+	right: 20px;
+}
+.tel:hover{
+	font-weight: bold;
+	font-size: 18px;
+	color: #fff;
+	text-decoration: none;
+}
 .banner {
-	margin-top: 20%;
+	margin-top: 25%;
 }
 .container>div>h1{
-		font-size: 60px;
+		font-size: 80px;
 }
 .morebtn{
 	height: 80px;
@@ -23,7 +40,7 @@ p{
 	background-repeat: no-repeat;
 	margin: 0 auto;
 	padding: 0 0;
-	margin-top: 120px;
+	margin-top: 10%;
 	cursor: pointer;
 }
 .morebtn>img{
@@ -48,12 +65,15 @@ p{
 .title-s{
 	font-style: italic;
 	margin-top: 80px;
-	margin-bottom: 60px;
+	margin-bottom: 50px;
 }
 .home{
 	width: 100%;
-	height: 600px;
+	height: 100%;
 	background-image: url(../img/home-bg.jpg); 
+	background-position: 50%,50%;
+	background-attachment: fixed;
+
 }
 .about,.product{
 	width: 100%;
@@ -120,9 +140,21 @@ p{
 	margin: 0 auto;
 	margin-bottom: 60px;
 	line-height: 1.9;
+	margin-top: 50px;
 }
-.material>div{
-	background-color: #3399ff;
+.countries{
+	width: 100%;
+	max-width: 768px;
+	margin: 0 auto;
+}
+.countries>div{
+	display: inline-block;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-top: 30px;
+}
+.countries>div>img{
+	width: 80px;
 }
 .material>div>img{
 	width: 100%;
@@ -133,13 +165,13 @@ p{
 	margin: 0 auto;
 	font-size: 18px;
 	line-height: 1.9;
-	margin-top: 50px;
+	margin-top: 30px;
 	margin-bottom: 100px;
 }
 .quality>div{
 	width: 100%;
 	margin: 0 auto;
-	margin-bottom: 100px;
+	margin-bottom: 50px;
 }
 .quality-box{
 	display: inline-block;

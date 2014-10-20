@@ -13,14 +13,49 @@
 	    <script src="js/respond.min.js"></script>
 	    <script src="js/jquery.min.js"></script>
 	    <script src="js/bootstrap.min.js"></script>
+	    <script type="text/javascript" src="js/skrollr.min.js"></script>
 	    <script type="text/javascript">
-	    $(document).ready(function() {
-	    	$('body').scrollspy({target: '#selector'});
-	    });
+		    $(document).ready(function() {
+		    	skrollr.init({
+					forceHeight: false
+				});
+		    	$('body').scrollspy({target: '#selector'});
+		    	$(".nav>li>a").click(function(){
+			        var href = $(this).attr("href");
+			        var pos = $(href).offset().top;
+			        $("html,body").animate({scrollTop: pos}, 1000);
+			        return false;
+		    	});
+		    	var navtop = $("#selector").offset().top;
+		    	console.log(navtop);
+		    	$(window).scroll(function() {
+		    		if ($(window).scrollTop()>=navtop) {
+		    			$("#selector").addClass('navbar-fixed-top');
+		    		}else{
+		    			$("#selector").removeClass('navbar-fixed-top');
+		    		}
+		    	});
+		    	var abouttop = $(".about").offset().top;
+		    	$(".morebtn").click(function() {
+		    		$("html,body").animate({scrollTop:abouttop}, 1000);
+		    	});
+		    });
 	    </script>
 	</head>
 	<body date-target="selector" data-spy="scroll">
-		<nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="selector">
+		<div class="home center" id="homes"  >
+			<a href="tel:+852 28903353" class="tel"><span>Tel: +852 28903353</span></a>			
+			<div class="container">
+				<div class="white banner text-center">
+					<h1>ELEKEEN</h1>
+					<p class="white lead">Trusted quality Down and Feather supplier</p>
+				</div>
+			</div>
+			<div class="morebtn">
+				<img src="img/btn2.png" alt="">
+			</div>
+		</div>
+		<nav class="navbar navbar-inverse" role="navigation" id="selector">
 		    <div class="container-fluid">
 			    <div class="navbar-header">
 			      	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -42,17 +77,6 @@
 			    </div>
 		  </div>
 		</nav>
-		<div class="home center" id="homes">			
-			<div class="container">
-				<div class="white banner text-center">
-					<h1>ELEKEEN</h1>
-					<p class="white lead">Trusted quality Down and Feather supplier</p>
-				</div>
-			</div>
-			<div class="morebtn">
-				<img src="img/btn2.png" alt="">
-			</div>
-		</div>
 		<div class="about center">
 			<h1 class="title" id="abouts">ABOUT US</h1>
 			<p>Elekeen is a supplier of top quality down & feather filling material for down jacket manufacturing. Combining 25 years of experience in down feather material processing and garment manufacturing,  we offer our expert services to help you control the quality of your garment production.</p>
@@ -80,13 +104,55 @@
 			</div>
 			<div class="material">
 				<h2 class="title-s">We import material from all parts of the world</h2>
-				<p>Duck and Goose down feather are natural byproducts that are also  nature’s insulation material. We source raw unprocessed down feather material from all over the world to provide our customers with product that best fits their needs. Our raw material is processed and washed in our factories in China. </p>
-				<div>
-					<img src="img/product-d.png" alt="">
+				<div class="countries">
+					<div>
+						<img src="img/USA.png" alt="">
+						<p>USA</p>
+					</div>
+					<div>
+						<img src="img/England.png" alt="">
+						<p>England</p>
+					</div>
+					<div>
+						<img src="img/Germany.png" alt="">
+						<p>Germany</p>
+					</div>
+					<div>
+						<img src="img/Italy.png" alt="">
+						<p>Italy</p>
+					</div>
+					<div>
+						<img src="img/France.png" alt="">
+						<p>France</p>
+					</div>
+					<div>
+						<img src="img/Spain.png" alt="">
+						<p>Spain</p>
+					</div>
+					<div>
+						<img src="img/Brazil.png" alt="">
+						<p>Brazil</p>
+					</div>
+					<div>
+						<img src="img/Poland.png" alt="">
+						<p>Poland</p>
+					</div>
+					<div>
+						<img src="img/Hungary.png" alt="">
+						<p>Hungary</p>
+					</div>
+					<div>
+						<img src="img/Bulgaria.png" alt="">
+						<p>Bulgaria</p>
+					</div>
+					<div>
+						<img src="img/Ukraine.png" alt="">
+						<p>Ukraine</p>
+					</div>
 				</div>
+				<p>Duck and Goose down feather are natural byproducts that are also  nature’s insulation material. We source raw unprocessed down feather material from all over the world to provide our customers with product that best fits their needs. Our raw material is processed and washed in our factories in China. </p>
 			</div>
 			<div class="quality">
-				<p>We are committed to sourcing and supplying the highest quality down to our customers. Our down feather is washed and processed in our factories in Hangzhou and Anhui China. Our in-house laboratory perform tests on every lot of down we produce, such as Content, Species, Fill Power, Cleanliness (Oxygen, Turbidity) and more. We also send samples to an independent and IDFB-accredited down testing laboratory.</p>
 				<div>
 					<div class="quality-box ">
 						<div class="box-top"></div>
@@ -104,6 +170,7 @@
 						<img src="img/product-c.jpg" alt="">
 					</div>
 				</div>
+				<p>We are committed to sourcing and supplying the highest quality down to our customers. Our down feather is washed and processed in our factories in Hangzhou and Anhui China. Our in-house laboratory perform tests on every lot of down we produce, such as Content, Species, Fill Power, Cleanliness (Oxygen, Turbidity) and more. We also send samples to an independent and IDFB-accredited down testing laboratory.</p>
 				<div class="chart">
 					<img src="img/process-v1.png" alt="">
 				</div>

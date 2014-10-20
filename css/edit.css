@@ -1,27 +1,40 @@
 .container-fluid{
-	padding-right: 50px;
+	padding-right: 200px;
 	padding-left: 50px;
 }
-.navbar-default .navbar-brand{
+.navbar-inverse .navbar-brand{
 	font-size: 20px;
-	color: #3399ff;
+	color: #fff;
 }
-.navbar-default .navbar-brand:hover{
+.navbar-inverset .navbar-brand:hover{
 	font-size: 22px;
 	font-weight: bold;
 	color: #3399ff;
 }
-.navbar-default{
-	background-color: #fff;
+.navbar-inverse{
+	background-color: rgba(0,0,0,0.7);
+	border: none;
+	border-radius: 0px;
+	z-index: 99;
 }
-.navbar-default .navbar-nav>li>a{
-	color: #333;
+.navbar-inverse .navbar-nav>li>a{
+	color: #eee;
 }
-.navbar-default .navbar-nav>.active>a{
-	background:none;
-	color: #3399ff;
+.navbar-inverse .navbar-nav>li>a:hover{
+	background-color: #ff3333;
+}
+.navbar-inverse .navbar-nav>.active>a{
+	background-color: #ff3333;
+	color: #fff;
 	font-size: 16px;
 	font-weight: bold;
+}
+.navbar-inverse .navbar-nav>.active>a:hover{
+	background-color: #ff3333;
+}
+.navbar-toggle{
+	float: left;
+	margin-left: 15px;
 }
 @media(max-width: 768px) and (min-width: 480px){
 	.home{
