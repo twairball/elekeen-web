@@ -1,12 +1,23 @@
+
+/*
+ * common styles
+ */
 body{
 	font-family: proxima_nova, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	/*font-size: 18px;*/
 }
+<<<<<<< HEAD
 html,body{
 	height: 100%;
 }
+=======
+>>>>>>> e27c6513556dc03bbea4f5496ea4d931c80130a5
 p{
 	color: #666;
-	margin:  0 auto;
+	/*margin:  0 auto;*/
+}
+.white, .white h1, .white h2, .white h3, .white h4, .white h5, .white h6, .white p {
+	color: #fff;
 }
 .white, .white h1, .white h2, .white h3, .white h4, .white h5, .white h6 {
 	color: #fff;
@@ -69,9 +80,16 @@ p{
 }
 .home{
 	width: 100%;
+<<<<<<< HEAD
 	height: 100%;
 	background-image: url(../img/home-bg.jpg); 
 	background-position: 50%,50%;
+=======
+	height: 600px;
+	background-image: url(../img/duck1.png);
+	background-size: cover;
+	background-repeat: none;
+>>>>>>> e27c6513556dc03bbea4f5496ea4d931c80130a5
 	background-attachment: fixed;
 
 }
@@ -79,6 +97,8 @@ p{
 	width: 100%;
 	margin: 0 auto;
 }
+
+/* about section */
 .about>p{
 	font-size: 18px;
 	line-height: 1.9;
@@ -87,6 +107,25 @@ p{
 	margin: 0 auto;
 	margin-top: 50px;
 }
+
+/* product section */
+.bg-map {
+	background-image: url('../img/map.png'); 
+	background-size: cover;
+	background-repeat: none;
+	background-attachment: fixed;
+}
+
+/* delivery section */
+.bg-station {
+	background-image: url('../img/trainstation.png'); 
+	background-size: cover;
+	background-repeat: none;
+	background-attachment: fixed;
+}
+
+
+
 .txt-img{
 	max-width: 1200px;
 	width: 100%;
