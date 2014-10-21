@@ -1,182 +1,49 @@
-.container-fluid{
-	padding-right: 200px;
-	padding-left: 50px;
+.jumbotron{
+	background-color: #ffffff;
 }
-.navbar-inverse .navbar-brand{
-	font-size: 20px;
-	color: #fff;
-}
-.navbar-inverset .navbar-brand:hover{
-	font-size: 22px;
-	font-weight: bold;
-	color: #3399ff;
-}
+/*nav*/
 .navbar-inverse{
-	background-color: rgba(0,0,0,0.7);
-	border: none;
-	border-radius: 0px;
-	z-index: 99;
-}
-.navbar-inverse .navbar-nav>li>a{
-	color: #eee;
-}
-.navbar-inverse .navbar-nav>li>a:hover{
-	background-color: #ff3333;
+	background-color:rgba(0,0,0,0.8);
 }
 .navbar-inverse .navbar-nav>.active>a{
 	background-color: #ff3333;
-	color: #fff;
-	font-size: 16px;
-	font-weight: bold;
+	color: #ffffff;
 }
 .navbar-inverse .navbar-nav>.active>a:hover{
 	background-color: #ff3333;
+	color: #ffffff;
 }
-.navbar-toggle{
-	float: left;
-	margin-left: 15px;
+/*nav*/
+/*button*/
+.btn-lg{
+	font-size: 24px;
+	padding: 5px 45px;
+	border-radius: 28px;
 }
-@media(max-width: 768px) and (min-width: 480px){
-	.home{
-		height: 400px;
-	}
-	.container-fluid{
-		padding-right: 15px;
-		padding-left: 15px;
-	}
-	.txt-img>p{
-		margin-top: 35px;
-		text-align: center;
-	}
-	.title{
-		margin-top: 30px;
-		font-size: 28px;
-		margin-bottom: 10px;
-	}
-	.about>p{
-		margin-top: 25px;
-	}
-	.title-s{
-		margin-top: 30px;
-		margin-bottom: 25px;
-		font-size: 22px;
-	}
-	.product{
-		margin-top: 50px;
-	}
-	.special{
-		margin-top: 50px;
-	}
-	.special>div{
-		margin-left: 5%;
-		margin-right: 5%;
-		width: 20.8%;
-	}
-	.quality>p{
-		margin-bottom: 30px;
-	}
-	.quality-box{
-		width: 100%;
-		margin-left: 0;
-		margin-right: 0;
-		margin-bottom: 30px;
-	}
-	.quality-box>img{
-		width: 150px;
-	}
+.btn-danger{
+	background: none;	
 }
-@media(max-width: 480px){
-	.home{
-		height: 300px;
-	}
-	.banner{
-		margin-top: 40%;
-	}
-	.container>div>h1{
-		font-size: 36px;
-	}
-	.container-fluid{
-		padding-right: 15px;
-		padding-left: 15px;
-	}
-	.title{
-		font-size: 18px;
-		margin-top: 30px;
-		margin-bottom: 0px;
-	}
-	.about>p{
-		margin-top: 15px;
-		font-size: 16px;
-		line-height: 1.6;
-	}
-	.title-s{
-		margin-top: 20px;
-		margin-bottom: 15px;
-		font-size: 16px;
-		font-weight: bold;
-	}
-	.txt-img>p{
-		font-size: 14px;
-		line-height: 1.6;
-		margin-top: 15px;
-		max-width: 300px;
-		width: 96%;
-		margin: 0 auto;
-	}
-	.txt-img>img{
-		margin-right: 0;
-		margin-left: 0;
-	}
-	.product{
-		margin-top:30px;
-	}
-	.special{
-		margin-top: 40px;
-	}
-	.special>div{
-		width: 90%;
-		margin-left: 5%;
-		margin-right: 5%;
-	}
-	.special>div>img{
-		width: 150px;
-		border-radius: 75px;
-		margin: 0 auto;
-	}
-	.material>p{
-		font-size: 14px;
-		line-height: 1.6;
-		margin-top: 15px;
-		margin-bottom: 15px;
-	}
-	.quality>p{
-		font-size: 14px;
-		line-height: 1.6;
-		margin-top: 15px;
-		margin-bottom:15px;
-	}
-	.quality>div{
-		margin-bottom: 30px;
-	}
-	.quality-box{
-		width: 100%;
-		margin-left: 0;
-		margin-right: 0;
-		margin-bottom: 30px;
-	}
-	.quality-box>img{
-		width: 150px;
-	}
-	.contact>div>div{
-		width: 90%;
-		margin-right: 5%;
-		margin-left: 5%;
-		margin-top: 30px;
-	}
-	.contact>div>div>img{
-		margin-bottom: 20px;
-	}
-	.contact>div>div>p{
-		font-size: 14px;
-	}
+.btn-default{
+	background: none;
+	margin-top: 50px;
 }
+.btn-danger:hover{
+	border-color: #d43f3a;
+}
+.btn-default:hover{
+	background-color: #d43f3a;
+	border-color: #d43f3a;
+	color: #fff;
+}
+.btn-default:active{
+	background-color: #d43f3a;
+	color: #fff;
+}
+.btn-default:focus{
+	background-color: #d43f3a;
+	color: #fff;
+}
+.btn{
+	border: 2px solid #d43f3a ;
+}
+/*button*/
