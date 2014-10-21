@@ -1,9 +1,28 @@
 
+/* header section */
+.home{
+	width: 100%;
+	height: 600px;
+	background-image: url(../img/duck1.png);
+	background-size: cover;
+	background-repeat: none;
+	background-attachment: fixed;
+
+}
+
 .banner {
 	margin-top: 25%;
 }
 .big {
-	font-size: 60px;
+	font-size: 70px;
+}
+
+@media (min-width: 321px) and (max-width: 1199px) {
+	.big {font-size: 85px;}
+}
+
+@media (min-width: 1200px) {
+	.big {font-size: 100px;}
 }
 .frame {
 	padding: 10px 25px;
