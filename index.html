@@ -37,8 +37,10 @@
 		    $(window).scroll(function() {
 		    	if ($(window).scrollTop()>=navtop) {
 		    		$("#selector").addClass('navbar-fixed-top');
+		    		$("#navtop").addClass('navtop');
 		    	}else{
 		    		$("#selector").removeClass('navbar-fixed-top');
+		    		$("#navtop").removeClass('navtop');
 		    	}
 		    });
 	    });
@@ -73,22 +75,23 @@
 			    </div>
 		  	</div>
 		</nav>
+		<div id="navtop"></div>		
 		<section class="about jumbotron" id="abouts">
-			<h1 class="middle">ABOUT US</h1>
+			<h1 class="middle title">About Us</h1>
 			<div class="container middle">
 				<div class="row">
-					<div class="col-sm-8 col-sm-offset-2">						
-						<p>Elekeen is a supplier of top quality down & feather filling material for down jacket manufacturing. Combining 25 years of experience in down feather material processing and garment manufacturing,  we offer our expert services to help you control the quality of your garment production.</p>
-						<p>Our offices are based in Hong Kong and Shanghai, with factories in Hangzhou and Anhui China.</p>
-						<p>Whether you are a small boutique brand trying to keep it simple,  or a manager of a wide distributed supply chain, we can help you.</p>
+					<div class="col-sm-8 col-sm-offset-2">					
+						<p class="lead">Elekeen is a supplier of top quality down & feather filling material for down jacket manufacturing.</p>
+						<p class="text-block">Combining 25 years of experience in down feather material processing and garment manufacturing, we offer our expert services to help you control the quality of your garment production.</p>
+						<p class="text-block">Whether you are a small boutique brand trying to keep it simple,  or a manager of a wide distributed supply chain, we can help you.</p>
 						<button type="button" class="btn btn-default btn-lg" id="contactbtn">Contact US</button>
 					</div>
 				</div>
 			</div>
 		</section>
 		<section class="product jumbotron" id="products">
-			<div class="material middle text-w">
-				<h1>From all over the world</h1>
+			<div class="material middle text-w" data-top="background-color:rgb(0,51,102);" data-bottom="background-color:rgb(0,102,153);">
+				<h1 class="title">From all over the world</h1>
 				<div class="container">
 					<div class="row countries">
 						<div class="col-sm-2 col-sm-offset-2"><img src="img/USA.png" alt=""><p>USA</p></div>
@@ -114,18 +117,32 @@
 					</div>
 				</div>
 			</div>
-			<div class="quality middle">
-				<h1>High quality product</h1>
+			<div class="quality text-w middle">
+				<h1 class="title">High quality product</h1>
+				<div class="container">
+					<div class="row quality-img">
+						<div class="col-sm-2 col-sm-offset-2 text-w"><img src="img/sourced.png" alt=""><p>Sourced all over the world</p></div>
+						<div class="col-sm-2 text-w"><img src="img/ship.png" alt=""><p>Ship to Elekeen factory</p></div>
+						<div class="col-sm-2 text-w"><img src="img/washes.png" alt=""><p>Multiple washes</p></div>
+						<div class="col-sm-2 text-w"><img src="img/dried.png" alt=""><p>Specially dried</p></div>
+					</div>
+					<div class="row quality-img">
+						<div class="col-sm-2 col-sm-offset-2 text-w"><img src="img/purity.png" alt=""><p>De-dusted for purity</p></div>
+						<div class="col-sm-2 text-w"><img src="img/test.png" alt=""><p>Laboratory Testing </p></div>
+						<div class="col-sm-2 text-w"><img src="img/storage.png" alt=""><p>Climate controlled storage</p></div>
+						<div class="col-sm-2 text-w"><img src="img/customer.png" alt=""><p>Shipped to customer</p></div>
+					</div>
+				</div>
 				<div class="container">
 					<div class="row">
-						<div class="col-sm-8 col-sm-offset-2">							
+						<div class="col-sm-8 col-sm-offset-2 text-w">							
 							<p>We are committed to sourcing and supplying the highest quality down to our customers. Our down feather is washed and processed in our factories in Hangzhou and Anhui China. Our in-house laboratory perform tests on every lot of down we produce, such as Content, Species, Fill Power, Cleanliness (Oxygen, Turbidity) and more. We also send samples to an independent and IDFB-accredited down testing laboratory.</p>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="deliver text-w middle">
-				<h1>Delivered Anywhere</h1>
+				<h1 class="title">Delivered Anywhere</h1>
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-8 col-sm-offset-2 text-w">							
@@ -136,26 +153,24 @@
 			</div>												
 		</section>
 		<section class="customers jumbotron middle" id="customerss">
-			<h1 >Customers</h1>
-			<div class="customers-bg">
+			<h1 class="title">Customers</h1>
 				<div class="container ">				
-					<div class="row customerlogo">
+					<div class="row">
 						<div class="col-sm-3"><img src="img/customer1.png" alt=""></div>
 						<div class="col-sm-3"><img src="img/customer2.png" alt=""></div>
 						<div class="col-sm-3"><img src="img/customer3.png" alt=""></div>
 						<div class="col-sm-3"><img src="img/customer4.png" alt=""></div>
 					</div>
-					<div class="row customerlogo">
+					<div class="row">
 						<div class="col-sm-3"><img src="img/customer5.png" alt=""></div>
 						<div class="col-sm-3"><img src="img/customer6.png" alt=""></div>
 						<div class="col-sm-3"><img src="img/customer7.png" alt=""></div>
 						<div class="col-sm-3"><img src="img/customer8.png" alt=""></div>
 					</div>
 				</div>
-			</div>
 		</section>
 		<section class="contact jumbotron" id="contacts">
-			<h1 class="middle">Contact Us</h1>
+			<h1 class="middle title">Contact Us</h1>
 			<div class="container middle">
 				<div class="row">					
 					<div class="col-sm-4"><img src="img/address.png" alt=""></div>

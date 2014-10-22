@@ -1,9 +1,26 @@
+/*all*/
 html, body{
 	height: 100%;
+	font-family: proxima_nova, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+p{
+	color: #666666;
+}
+h1.title{
+	font-size: 36px;
 }
 .middle{
 	text-align: center;
 }
+p.text-block{
+	font-size: 16px;
+	margin: 15px auto;
+}
+.text-w>h1,.text-w>p{
+	color: #fff;
+}
+/*all*/
+/*home*/
 .home{
 	background-image: url(../img/home-bg.jpg);
 	background-attachment: fixed;
@@ -28,20 +45,37 @@ html, body{
 	margin-top: 20px;
 	margin-bottom: 30px;
 }
-.about{
-
+/*home*/
+/*product*/
+.product{
+	padding-top: 50px;
 }
+	/*material*/
 .material{
-	background-color: #003366;
+	background-image: url(../img/ferry-duck.jpg);
+	background-attachment: fixed;
+	background-position: 50%,50%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	margin-bottom: 0px;
+	padding-top: 20px;
 }
-.text-w>h1,.text-w>p{
-	color: #fff;
+.quality{
+	padding-top: 20px;
+	background-color: #3399ff;
+}
+.quality-img>div>img{
+	border-radius: 60px;
+	border: 2px solid #fff;
 }
 .countries{
 	margin-top: 10px;
 }
 .countries>div>img{
-	border-radius: 32px;
+	border-radius: 50px;
+	border: 2px solid #ffffff;
+	box-shadow: 0px 0px 10px;
 }
 .countries>div>p{
 	color: #ffffff;
@@ -56,10 +90,14 @@ html, body{
 	height: 100%;
 	background-repeat: no-repeat;
 	background-size: 100%;
+	padding-top: 50px;
+	padding-bottom: 150px;
 }
-.customers-bg{
+/*product*/
+.customers{
 	background-image: url(../img/customer-bg.png);
-}
-.customerlogo{
-	margin-top: 50px;
+	background-attachment: fixed;
+	background-position: 50%,50%;
+	background-repeat: no-repeat;
+	padding-bottom: 150px;
 }
