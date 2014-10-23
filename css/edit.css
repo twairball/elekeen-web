@@ -25,38 +25,97 @@
 }
 /*nav*/
 /*button*/
-.btn-lg{
-	font-size: 24px;
-	padding: 5px 45px;
-	border-radius: 28px;
+.homebtn.btn-outline.btn-primary{
+	color: #ffffff;
 }
-.btn-danger{
-	background: none;	
-}
-.btn-default{
-	background: none;
+.btn.btn-outline {
 	margin-top: 50px;
+    background-color: transparent;
+    color: inherit;
+    transition: all .5s ease-in;
+    -webkit-transition: all .5s ease-in;
 }
-.btn-danger:hover{
-	border-color: #d43f3a;
+
+.btn-outline, .btn-outline.btn-primary {
+	color: #333333;
+	border: 1px solid #ff3333;
 }
-.btn-default:hover{
-	background-color: #d43f3a;
-	border-color: #d43f3a;
+.btn-outline:hover {
 	color: #fff;
+	/*background-color: $emerald;*/
+	background-color: #ff3333;
 }
-.btn-default:active{
-	background-color: #d43f3a;
+
+.btn-lg{
+	border-radius: 40px;
+	width: 160px;
+}
+.btn-primary{
 	color: #fff;
+	background-color: $brand-primary;
+	-webkit-box-shadow: 0 3px 0 0 darken($brand-primary, 10%);
+	box-shadow: 0 3px 0 0 darken($brand-primary, 10%);
 }
-.btn-default:focus{
-	background-color: #d43f3a;
+.btn-primary:hover {
+	background-color: darken($brand-primary, 10%);
+}
+
+.btn-lg,.btn-primary
+ {
+	-webkit-box-shadow: 0 5px 0 0 darken($brand-primary, 10%);
+	box-shadow: 0 5px 0 0 darken($brand-primary, 10%);
+}
+.btn:hover {
 	color: #fff;
-}
-.btn{
-	border: 2px solid #d43f3a ;
 }
 /*button*/
-.row{
-	margin-top: 30px;
+/*response*/
+@media(max-width: 768px) and (min-width: 480px){
+	/*home*/
+	.home h1{
+		font-size: 72px;
+	}
+	/*home*/
+	/*quality*/
+	.quality-img>div>p{
+		font-size: 16px;
+	}
+	/*quality*/
 }
+@media(max-width:480px ){
+	/*all*/
+	.jumbotron p{
+		font-size: 18px;
+	}
+	/*all*/
+	/*home*/
+	.home h1{
+		font-size: 48px;
+	}
+	/*home*/
+	/*customers*/
+	.customer-logo>img{
+		width: 100%;
+	}
+	/*customers*/
+	/*quality*/
+	.quality-img>div>img{
+		max-width: 100px;
+		width: 100%;
+	}
+	.quality-img>div>p{
+		font-size: 18px;
+	}
+	/*quality*/
+	/*contact*/
+	.contact-text>p{
+		font-size: 14px;
+		margin-top: 20px;
+	}
+	.contact-text>p>a{
+		color: #666;
+		text-decoration: none;
+	}
+	/*contact*/
+}
+/*response*/
