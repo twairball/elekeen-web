@@ -19,6 +19,9 @@ p.text-block{
 .text-w>h1,.text-w>p{
 	color: #fff;
 }
+.row-margin{
+	margin-top: 30px;
+}
 /*all*/
 /*home*/
 .home{
@@ -27,7 +30,6 @@ p.text-block{
 	background-position: 50%,50%;
 	height: 100%;
 	background-repeat: no-repeat;
-	background-size: 100%;
 	margin-bottom: 0px;
 }
 .banner{
@@ -57,17 +59,9 @@ p.text-block{
 	background-position: 50%,50%;
 	height: 100%;
 	background-repeat: no-repeat;
-	background-size: 100%;
 	margin-bottom: 0px;
-	padding-top: 20px;
-}
-.quality{
-	padding-top: 20px;
-	background-color: #3399ff;
-}
-.quality-img>div>img{
-	border-radius: 60px;
-	border: 2px solid #fff;
+	padding-top: 50px;
+	padding-bottom: 50px
 }
 .countries{
 	margin-top: 10px;
@@ -75,7 +69,14 @@ p.text-block{
 .countries>div>img{
 	border-radius: 50px;
 	border: 2px solid #ffffff;
-	box-shadow: 0px 0px 10px;
+	box-shadow: 0px 0px 0px;
+	transition:box-shadow 1s;
+	-moz-transition:box-shadow 1s; /* Firefox 4 */
+	-webkit-transition:box-shadow 1s; /* Safari and Chrome */
+	-o-transition:box-shadow 1s; /* Opera */
+}
+.countries>div>img:hover{
+	box-shadow: 0px 0px 20px #ff3333;
 }
 .countries>div>p{
 	color: #ffffff;
@@ -83,21 +84,72 @@ p.text-block{
 	font-size: 16px;
 	margin-top: 10px;
 }
+	/*material*/
+	/*quality*/
+.quality{
+	padding-top: 50px;
+	padding-bottom: 150px;
+	background-color: #3399ff;
+}
+.quality-img>div>img{
+	border-radius: 60px;
+	border: 2px solid #fff;
+	max-width: 100px;
+	width: 100%;
+	box-shadow: 0px 0px 0px #ff3333;
+	transition:box-shadow 1s,width 1s;
+	-moz-transition:box-shadow 1s,width 1s; /* Firefox 4 */
+	-webkit-transition:box-shadow 1s,width 1s; /* Safari and Chrome */
+	-o-transition:box-shadow 1s,width 1s;
+}
+.quality-img>div>img:hover{
+	width: 110px;
+	box-shadow: 0px 0px 20px #ff3333;
+}
+	/*quality*/
+	/*deliver*/
 .deliver{
-	background-image: url(../img/trainstation.png);
+	background-image: url(../img/trainstation.jpg);
 	background-attachment: fixed;
 	background-position: 50%,50%;
 	height: 100%;
 	background-repeat: no-repeat;
-	background-size: 100%;
-	padding-top: 50px;
+	padding-top: 150px;
 	padding-bottom: 150px;
 }
+	/*deliver*/
 /*product*/
+/*customers*/
 .customers{
 	background-image: url(../img/customer-bg.png);
 	background-attachment: fixed;
 	background-position: 50%,50%;
 	background-repeat: no-repeat;
 	padding-bottom: 150px;
+}
+.customer-logo>img{
+	box-shadow: 0px 0px 0px；
+	transition:box-shadow 1s;
+	-moz-transition:box-shadow 1s; /* Firefox 4 */
+	-webkit-transition:box-shadow 1s; /* Safari and Chrome */
+	-o-transition:box-shadow 1s;
+}
+.customer-logo>img:hover{
+	box-shadow: 0px 0px 20px; 
+}
+/*customers*/
+/*contact*/
+.contact-text>p{
+	font-size: 18px;
+	margin-top: 20px;
+}
+.contact-text>p>a{
+	color: #666;
+	text-decoration: none;
+}
+/*contact*/
+.foot.jumbotron{
+	height: 50px;
+	background-color: rgba(0,0,0,0.8);
+	margin-bottom: 0px;
 }

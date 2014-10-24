@@ -3,7 +3,7 @@
 	<head>
 	    <meta charset="utf-8">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no,minimum-scale=1.0, maximum-scale=1.0">
 	    <title>Elekeen-Expert down feather supplier</title>
 	    <link href="css/bootstrap.min.css" rel="stylesheet">
 	    <link rel="stylesheet" type="text/css" href="css/elekeen.css">
@@ -12,45 +12,41 @@
 	    <script src="js/respond.min.js"></script>
 	    <script src="js/jquery.min.js"></script>
 	    <script src="js/bootstrap.min.js"></script>
-	    <script type="text/javascript" src="js/skrollr.min.js"></script>
 	    <script type="text/javascript">
-	    $(document).ready(function() {
-	    	skrollr.init({
-					forceHeight: false
-			});
-	    	$('body').scrollspy({target: '#selector'});
-	    	$(".nav>li>a").click(function(){
-			    var href = $(this).attr("href");
-			    var pos = $(href).offset().top;
-			    $("html,body").animate({scrollTop: pos}, 1000);
-			    return false;
+		    $(document).ready(function() {
+		    	$('body').scrollspy({target: '#selector'});
+		    	$(".nav>li>a").click(function(){
+				    var href = $(this).attr("href");
+				    var pos = $(href).offset().top;
+				    $("html,body").animate({scrollTop: pos}, 1000);
+				    return false;
+			    });
+			    $("#morebtn").click(function() {
+			    	var abouttop = $("#abouts").offset().top;
+			    	$("html,body").animate({scrollTop:abouttop}, 1000);
+			    });		    
+			    $("#contactbtn").click(function() {
+			    	var contacttop = $("#contacts").offset().top;
+			    	$("html,body").animate({scrollTop:contacttop}, 1000);
+			    });
+			    var navtop = $("#selector").offset().top;
+			    $(window).scroll(function() {
+			    	if ($(window).scrollTop()>=navtop) {
+			    		$("#selector").addClass('navbar-fixed-top');
+			    		$("#navtop").addClass('navtop');
+			    	}else{
+			    		$("#selector").removeClass('navbar-fixed-top');
+			    		$("#navtop").removeClass('navtop');
+			    	}
+			    });
 		    });
-		    $("#morebtn").click(function() {
-		    	var abouttop = $("#abouts").offset().top;
-		    	$("html,body").animate({scrollTop:abouttop}, 1000);
-		    });		    
-		    $("#contactbtn").click(function() {
-		    	var contacttop = $("#contacts").offset().top;
-		    	$("html,body").animate({scrollTop:contacttop}, 1000);
-		    });
-		    var navtop = $("#selector").offset().top;
-		    $(window).scroll(function() {
-		    	if ($(window).scrollTop()>=navtop) {
-		    		$("#selector").addClass('navbar-fixed-top');
-		    		$("#navtop").addClass('navtop');
-		    	}else{
-		    		$("#selector").removeClass('navbar-fixed-top');
-		    		$("#navtop").removeClass('navtop');
-		    	}
-		    });
-	    });
 	    </script>
 	</head>
 	<body>
 		<section class="home jumbotron middle" id="homes">
 				<h1 class="banner">ELEKEEN</h1>
 				<p>Trusted quality Down and Feather supplier</p>
-				<button type="button" class="btn btn-danger btn-lg" id="morebtn">more</button>
+				<button type="button" class="btn homebtn btn-outline btn-lg btn-primary" id="morebtn">more</button>
 				<p><img src="img/Arrowhead-Down.png" alt=""></p>			
 		</section>
 		<nav class="navbar navbar-inverse" role="navigation" id="selector">
@@ -84,31 +80,31 @@
 						<p class="lead">Elekeen is a supplier of top quality down & feather filling material for down jacket manufacturing.</p>
 						<p class="text-block">Combining 25 years of experience in down feather material processing and garment manufacturing, we offer our expert services to help you control the quality of your garment production.</p>
 						<p class="text-block">Whether you are a small boutique brand trying to keep it simple,  or a manager of a wide distributed supply chain, we can help you.</p>
-						<button type="button" class="btn btn-default btn-lg" id="contactbtn">Contact US</button>
+						<button type="button" class="btn btn-outline btn-lg btn-primary" id="contactbtn">Contact US</button>
 					</div>
 				</div>
 			</div>
 		</section>
 		<section class="product jumbotron" id="products">
-			<div class="material middle text-w" data-top="background-color:rgb(0,51,102);" data-bottom="background-color:rgb(0,102,153);">
+			<div class="material middle text-w">
 				<h1 class="title">From all over the world</h1>
 				<div class="container">
 					<div class="row countries">
-						<div class="col-sm-2 col-sm-offset-2"><img src="img/USA.png" alt=""><p>USA</p></div>
-						<div class="col-sm-2"><img src="img/Germany.png" alt=""><p>Germany</p></div>
-						<div class="col-sm-2"><img src="img/France.png" alt=""><p>France</p></div>
-						<div class="col-sm-2"><img src="img/England.png" alt=""><p>England</p></div>						
+						<div class="col-sm-2 col-sm-offset-2 col-xs-6"><img src="img/USA.png" alt=""><p>USA</p></div>
+						<div class="col-sm-2 col-sm-offset-0 col-xs-6"><img src="img/Germany.png" alt=""><p>Germany</p></div>
+						<div class="col-sm-2 col-sm-offset-0 col-xs-6"><img src="img/France.png" alt=""><p>France</p></div>
+						<div class="col-sm-2 col-sm-offset-0 col-xs-6"><img src="img/England.png" alt=""><p>England</p></div>						
 					</div>
 					<div class="row countries">
-						<div class="col-sm-2 col-sm-offset-2"><img src="img/Italy.png" alt=""><p>Italy</p></div>
-						<div class="col-sm-2"><img src="img/Spain.png" alt=""><p>Spain</p></div>
-						<div class="col-sm-2"><img src="img/Ukraine.png" alt=""><p>Ukraine</p></div>
-						<div class="col-sm-2"><img src="img/Brazil.png" alt=""><p>Brazil</p></div>						
+						<div class="col-sm-2 col-sm-offset-2 col-xs-6"><img src="img/Italy.png" alt=""><p>Italy</p></div>
+						<div class="col-sm-2 col-sm-offset-0 col-xs-6"><img src="img/Spain.png" alt=""><p>Spain</p></div>
+						<div class="col-sm-2 col-sm-offset-0 col-xs-6"><img src="img/Ukraine.png" alt=""><p>Ukraine</p></div>
+						<div class="col-sm-2 col-sm-offset-0 col-xs-6"><img src="img/Brazil.png" alt=""><p>Brazil</p></div>						
 					</div>
 					<div class="row countries">
-						<div class="col-sm-2 col-sm-offset-3"><img src="img/Bulgaria.png" alt=""><p>Bulgaria</p></div>
-						<div class="col-sm-2"><img src="img/Hungary.png" alt=""><p>Hungary</p></div>
-						<div class="col-sm-2"><img src="img/Poland.png" alt=""><p>Poland</p></div>
+						<div class="col-sm-2 col-sm-offset-3 col-xs-6"><img src="img/Bulgaria.png" alt=""><p>Bulgaria</p></div>
+						<div class="col-sm-2 col-sm-offset-0 col-xs-6"><img src="img/Hungary.png" alt=""><p>Hungary</p></div>
+						<div class="col-sm-2 col-sm-offset-0 col-xs-6 col-xs-offset-3"><img src="img/Poland.png" alt=""><p>Poland</p></div>
 					</div>
 					<div class="row">
 						<div class="text-w col-sm-8 col-sm-offset-2">						
@@ -121,16 +117,16 @@
 				<h1 class="title">High quality product</h1>
 				<div class="container">
 					<div class="row quality-img">
-						<div class="col-sm-2 col-sm-offset-2 text-w"><img src="img/sourced.png" alt=""><p>Sourced all over the world</p></div>
-						<div class="col-sm-2 text-w"><img src="img/ship.png" alt=""><p>Ship to Elekeen factory</p></div>
-						<div class="col-sm-2 text-w"><img src="img/washes.png" alt=""><p>Multiple washes</p></div>
-						<div class="col-sm-2 text-w"><img src="img/dried.png" alt=""><p>Specially dried</p></div>
+						<div class="col-sm-2 col-sm-offset-2 col-xs-6 text-w row-margin"><img src="img/sourced.png" alt=""><p>Sourced all over the world</p></div>
+						<div class="col-sm-2 col-xs-6 text-w row-margin"><img src="img/ship.png" alt=""><p>Ship to Elekeen factory</p></div>
+						<div class="col-sm-2 col-xs-6 text-w row-margin"><img src="img/washes.png" alt=""><p>Multiple washes</p></div>
+						<div class="col-sm-2 col-xs-6 text-w row-margin"><img src="img/dried.png" alt=""><p>Specially dried</p></div>
 					</div>
 					<div class="row quality-img">
-						<div class="col-sm-2 col-sm-offset-2 text-w"><img src="img/purity.png" alt=""><p>De-dusted for purity</p></div>
-						<div class="col-sm-2 text-w"><img src="img/test.png" alt=""><p>Laboratory Testing </p></div>
-						<div class="col-sm-2 text-w"><img src="img/storage.png" alt=""><p>Climate controlled storage</p></div>
-						<div class="col-sm-2 text-w"><img src="img/customer.png" alt=""><p>Shipped to customer</p></div>
+						<div class="col-sm-2 col-sm-offset-2 col-xs-6 text-w row-margin"><img src="img/purity.png" alt=""><p>De-dusted for purity</p></div>
+						<div class="col-sm-2 col-xs-6 text-w row-margin"><img src="img/test.png" alt=""><p>Laboratory Testing</p></div>
+						<div class="col-sm-2 col-xs-6 text-w row-margin"><img src="img/storage.png" alt=""><p>Climate controlled storage</p></div>
+						<div class="col-sm-2 col-xs-6 text-w row-margin"><img src="img/customer.png" alt=""><p>Shipped to customer</p></div>
 					</div>
 				</div>
 				<div class="container">
@@ -156,16 +152,16 @@
 			<h1 class="title">Customers</h1>
 				<div class="container ">				
 					<div class="row">
-						<div class="col-sm-3"><img src="img/customer1.png" alt=""></div>
-						<div class="col-sm-3"><img src="img/customer2.png" alt=""></div>
-						<div class="col-sm-3"><img src="img/customer3.png" alt=""></div>
-						<div class="col-sm-3"><img src="img/customer4.png" alt=""></div>
+						<div class="customer-logo col-sm-3 col-xs-5 col-sm-offset-0 col-xs-offset-1 row-margin"><img src="img/customer1.png" alt=""></div>
+						<div class="customer-logo col-sm-3 col-xs-5 row-margin"><img src="img/customer2.png" alt=""></div>
+						<div class="customer-logo col-sm-3 col-xs-5 col-sm-offset-0 col-xs-offset-1 row-margin"><img src="img/customer3.png" alt=""></div>
+						<div class="customer-logo col-sm-3 col-xs-5 row-margin"><img src="img/customer4.png" alt=""></div>
 					</div>
 					<div class="row">
-						<div class="col-sm-3"><img src="img/customer5.png" alt=""></div>
-						<div class="col-sm-3"><img src="img/customer6.png" alt=""></div>
-						<div class="col-sm-3"><img src="img/customer7.png" alt=""></div>
-						<div class="col-sm-3"><img src="img/customer8.png" alt=""></div>
+						<div class="customer-logo col-sm-3 col-xs-5 col-sm-offset-0 col-xs-offset-1 row-margin"><img src="img/customer5.png" alt=""></div>
+						<div class="customer-logo col-sm-3 col-xs-5 row-margin"><img src="img/customer6.png" alt=""></div>
+						<div class="customer-logo col-sm-3 col-xs-5 col-sm-offset-0 col-xs-offset-1 row-margin"><img src="img/customer7.png" alt=""></div>
+						<div class="customer-logo col-sm-3 col-xs-5 row-margin"><img src="img/customer8.png" alt=""></div>
 					</div>
 				</div>
 		</section>
@@ -173,18 +169,17 @@
 			<h1 class="middle title">Contact Us</h1>
 			<div class="container middle">
 				<div class="row">					
-					<div class="col-sm-4"><img src="img/address.png" alt=""></div>
-					<div class="col-sm-4"><img src="img/tel.png" alt=""></div>
-					<div class="col-sm-4"><img src="img/email.png" alt=""></div>
-				</div>
-				<div class="row">					
-					<div class="col-sm-4"><p>Hong Kong address: Unit 3A, 103-109 Leighton Road, Causeway Bay</p></div>
-					<div class="col-sm-4"><p>Hong Kong tel: +852 28903353</p></div>
-					<div class="col-sm-4"><p>email: info@elekeen.com</p></div>
-				</div>
-				<div class="row">					
-					<div class="col-sm-4"><p>Shanghai address: Unit 201B, 98 Yanping road, Jingan district, Shanghai</p></div>
-					<div class="col-sm-4"><p>Shanghai tel: +86 21 62309230</p></div>
+					<div class="col-sm-4 contact-text"><img src="img/address.png" alt="">
+						<p>Hong Kong: Unit 3A, 103-109 Leighton Road, Causeway Bay</p>
+						<p>Shanghai	: Unit 201B, 98 Yanping road, Jingan district, Shanghai</p>
+					</div>
+					<div class="col-sm-4 contact-text"><img src="img/tel.png" alt="">
+						<p><a href="tel:+852 28903353">Hong Kong tel: +852 28903353</a></p>
+						<p><a href="tel:+86 21 62309230">Shanghai tel: +86 21 62309230</a></p>						
+					</div>
+					<div class="col-sm-4 contact-text"><img src="img/email.png" alt="">
+						<p><a href="mailto:info@elekeen.com">email: info@elekeen.com</a></p>
+					</div>
 				</div>
 			</div>
 		</section>
