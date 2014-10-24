@@ -30,7 +30,8 @@ p.lead.text-block {
 }
 /*all*/
 /*home*/
-.home{
+
+.home.jumbotron{
 	background-color:#766f69;
 	background-image: url(../img/home-bg.jpg);
 	background-attachment: fixed;
