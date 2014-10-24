@@ -1,160 +1,133 @@
-.container-fluid{
-	padding-right: 50px;
-	padding-left: 50px;
+.jumbotron{
+	background-color: #ffffff;
+	padding-left: 0px;
+	padding-right: 0px;
 }
-.navbar-default .navbar-brand{
-	font-size: 20px;
-	color: #3399ff;
+/*nav*/
+.navbar{
+	border-radius: 0px;
+	border: none;
+	margin-bottom: 0px;
 }
-.navbar-default .navbar-brand:hover{
-	font-size: 22px;
-	font-weight: bold;
-	color: #3399ff;
+.navbar-inverse{
+	background-color:rgba(0,0,0,0.8);
 }
-.navbar-default{
-	background-color: #fff;
+.navbar-inverse .navbar-nav>.active>a{
+	background-color: #ff3333;
+	color: #ffffff;
 }
-.navbar-default .navbar-nav>li>a{
-	color: #333;
+.navbar-inverse .navbar-nav>.active>a:hover{
+	background-color: #ff3333;
+	color: #ffffff;
 }
-.navbar-default .navbar-nav>.active>a{
-	background:none;
-	color: #3399ff;
-	font-size: 16px;
-	font-weight: bold;
+.navtop{
+	height: 50px;
 }
+/*nav*/
+/*button*/
+.homebtn.btn-outline.btn-primary{
+	color: #ffffff;
+}
+.btn.btn-outline {
+	margin-top: 50px;
+    background-color: transparent;
+    color: inherit;
+    transition: all .5s ease-in;
+    -webkit-transition: all .5s ease-in;
+}
+
+.btn-outline, .btn-outline.btn-primary {
+	color: #333333;
+	border: 1px solid #ff3333;
+}
+.btn-outline:hover {
+	color: #fff;
+	/*background-color: $emerald;*/
+	background-color: #ff3333;
+}
+
+.btn-lg{
+	border-radius: 40px;
+	/*width: 160px;*/
+}
+.btn-primary{
+	color: #fff;
+	background-color: $brand-primary;
+	-webkit-box-shadow: 0 3px 0 0 darken($brand-primary, 10%);
+	box-shadow: 0 3px 0 0 darken($brand-primary, 10%);
+}
+.btn-primary:hover {
+	background-color: darken($brand-primary, 10%);
+}
+
+.btn-lg,.btn-primary
+ {
+	-webkit-box-shadow: 0 5px 0 0 darken($brand-primary, 10%);
+	box-shadow: 0 5px 0 0 darken($brand-primary, 10%);
+}
+.btn:hover {
+	color: #fff;
+}
+/*button*/
+/*response*/
+	/*background*/
+@media(max-width: 768px){
+	.home{
+		background-image: url(../img/home-bg-mini.jpg);	
+	}
+	.material{
+		background-image: url(../img/ferry-duck-mini.jpg);
+	}
+	.deliver{
+		background-image: url(../img/trainstation-mini.jpg);
+	}
+	.quality-img>div{
+		height: 150px;
+	}
+}
+	/*background*/
 @media(max-width: 768px) and (min-width: 480px){
-	.home{
-		height: 400px;
+	/*home*/
+	.home h1{
+		font-size: 72px;
 	}
-	.container-fluid{
-		padding-right: 15px;
-		padding-left: 15px;
+	/*home*/
+	/*quality*/
+	.quality-img>div>p{
+		font-size: 16px;
 	}
-	.txt-img>p{
-		margin-top: 35px;
-		text-align: center;
-	}
-	.title{
-		margin-top: 30px;
-		font-size: 28px;
-		margin-bottom: 10px;
-	}
-	.about>p{
-		margin-top: 25px;
-	}
-	.title-s{
-		margin-top: 30px;
-		margin-bottom: 25px;
-		font-size: 22px;
-	}
-	.product{
-		margin-top: 50px;
-	}
-	.special{
-		margin-top: 50px;
-	}
-	.special>div{
-		margin-left: 5%;
-		margin-right: 5%;
-		width: 20.8%;
-	}
-	.quality>p{
-		margin-bottom: 30px;
-	}
-	.quality-box{
-		width: 100%;
-		margin-left: 0;
-		margin-right: 0;
-		margin-bottom: 30px;
-	}
-	.quality-box>img{
-		width: 150px;
-	}
+	/*quality*/
 }
-@media(max-width: 480px){
-	.home{
-		height: 300px;
-	}
-	.container-fluid{
-		padding-right: 15px;
-		padding-left: 15px;
-	}
-	.title{
+@media(max-width:480px ){
+	/*all*/
+	.jumbotron p{
 		font-size: 18px;
-		margin-top: 30px;
-		margin-bottom: 0px;
 	}
-	.about>p{
-		margin-top: 15px;
-		font-size: 16px;
-		line-height: 1.6;
+	/*all*/
+	/*home*/
+	.home h1{
+		font-size: 48px;
 	}
-	.title-s{
-		margin-top: 20px;
-		margin-bottom: 15px;
-		font-size: 16px;
-		font-weight: bold;
-	}
-	.txt-img>p{
+	/*home*/
+	/*quality*/
+	.quality-img>div>p{
 		font-size: 14px;
-		line-height: 1.6;
-		margin-top: 15px;
 	}
-	.txt-img>img{
-		margin-right: 0;
-		margin-left: 0;
-	}
-	.product{
-		margin-top:30px;
-	}
-	.special{
-		margin-top: 40px;
-	}
-	.special>div{
-		width: 90%;
-		margin-left: 5%;
-		margin-right: 5%;
-	}
-	.special>div>img{
-		width: 150px;
-		border-radius: 75px;
-		margin: 0 auto;
-	}
-	.material>p{
-		font-size: 14px;
-		line-height: 1.6;
-		margin-top: 15px;
-		margin-bottom: 15px;
-	}
-	.quality>p{
-		font-size: 14px;
-		line-height: 1.6;
-		margin-top: 15px;
-		margin-bottom:15px;
-	}
-	.quality>div{
-		margin-bottom: 30px;
-	}
-	.quality-box{
+	/*quality*/
+	/*customers*/
+	.customer-logo>img{
 		width: 100%;
-		margin-left: 0;
-		margin-right: 0;
-		margin-bottom: 30px;
 	}
-	.quality-box>img{
-		width: 150px;
-	}
-	.contact>div>div{
-		width: 90%;
-		margin-right: 5%;
-		margin-left: 5%;
-		margin-top: 30px;
-	}
-	.contact>div>div>img{
-		margin-bottom: 20px;
-	}
-	.contact>div>div>p{
+	/*customers*/
+	/*contact*/
+	.contact-text>p{
 		font-size: 14px;
+		margin-top: 20px;
 	}
+	.contact-text>p>a{
+		color: #666;
+		text-decoration: none;
+	}
+	/*contact*/
 }
+/*response*/

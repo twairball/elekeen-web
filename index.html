@@ -3,25 +3,57 @@
 	<head>
 	    <meta charset="utf-8">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
-	    <title>Elekeen-Expert down feather supplier</title>
+	    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no,minimum-scale=1.0, maximum-scale=1.0">
+	    <title>Elekeen | Trusted Down Feather Supplier | High quality down feather filling material for down jackets</title>
+	    <meta content="Down feather supplier for down jacket" name="description">
+  		<meta content="duck down,goose down,down feather,down jacket,factory,filling power,white,wdd,gdd,90/10,EN 90/10" name="keywords">
+
+
 	    <link href="css/bootstrap.min.css" rel="stylesheet">
 	    <link rel="stylesheet" type="text/css" href="css/elekeen.css">
-	    <link rel="stylesheet" type="text/css" href="css/header.css">
-	    <link rel="stylesheet" type="text/css" href="css/btns.css">
 	    <link rel="stylesheet" type="text/css" href="css/edit.css">
 	    <script src="js/html5shiv.min.js"></script>
 	    <script src="js/respond.min.js"></script>
 	    <script src="js/jquery.min.js"></script>
 	    <script src="js/bootstrap.min.js"></script>
 	    <script type="text/javascript">
-	    $(document).ready(function() {
-	    	$('body').scrollspy({target: '#selector'});
-	    });
+		    $(document).ready(function() {
+		    	$('body').scrollspy({target: '#selector'});
+		    	$(".nav>li>a").click(function(){
+				    var href = $(this).attr("href");
+				    var pos = $(href).offset().top;
+				    $("html,body").animate({scrollTop: pos}, 1000);
+				    return false;
+			    });
+			    $("#morebtn").click(function() {
+			    	var abouttop = $("#abouts").offset().top;
+			    	$("html,body").animate({scrollTop:abouttop}, 1000);
+			    });		    
+			    $("#contactbtn").click(function() {
+			    	var contacttop = $("#contacts").offset().top;
+			    	$("html,body").animate({scrollTop:contacttop}, 1000);
+			    });
+			    var navtop = $("#selector").offset().top;
+			    $(window).scroll(function() {
+			    	if ($(window).scrollTop()>=navtop) {
+			    		$("#selector").addClass('navbar-fixed-top');
+			    		$("#navtop").addClass('navtop');
+			    	}else{
+			    		$("#selector").removeClass('navbar-fixed-top');
+			    		$("#navtop").removeClass('navtop');
+			    	}
+			    });
+		    });
 	    </script>
 	</head>
-	<body date-target="selector" data-spy="scroll">
-		<nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="selector">
+	<body>
+		<section class="home jumbotron middle" id="homes">
+				<h1 class="banner">ELEKEEN</h1>
+				<p>Trusted Down and Feather Supplier</p>
+				<button type="button" class="btn homebtn btn-outline btn-lg btn-primary" style="font-size: 14px; padding-left: 60px; padding-right: 60px;" id="morebtn">MORE</button>
+				<p><img src="img/Arrowhead-Down.png" alt=""></p>			
+		</section>
+		<nav class="navbar navbar-inverse" role="navigation" id="selector">
 		    <div class="container-fluid">
 			    <div class="navbar-header">
 			      	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -41,167 +73,167 @@
 				        <li><a href="#contacts">Contact</a></li>
 			      	</ul>
 			    </div>
-		  </div>
+		  	</div>
 		</nav>
-
-		<div class="home bg bg-duck" id="homes">
-			
-			<div class="container">
-				<div class="white banner text-center">
-					<h1 class="big">ELEKEEN</h1>
-					<p class="white lead">DOWN & FEATHER SUPPLIER</p>
-				</div>
-			</div>
-		</div>
-
-		<section class="jumbotron">
+		<div id="navtop"></div>		
+		<section class="about jumbotron" id="abouts">
+			<h2 class="text-center ">About Us</h2>
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-8 col-sm-offset-2">
-						<h2 class="center" id="abouts">About</h2>
-						<p class="lead text-center text-block">Elekeen is a supplier of top quality down & feather filling material for down jacket manufacturing.</p>
 
-						<p class="caption text-block">Combining 25 years of experience in down feather material processing and garment manufacturing,  we offer our expert services to help you control the quality of your garment production.
-						</p>
-
-						<p class="caption text-block">Whether you are a small boutique brand trying to keep it simple,  or a manager of a wide distributed supply chain, we can help you. </p>
-
-						<div class="text-center" style="margin-top: 40px;">
-							<div class="btn btn-outline btn-lg btn-primary">Contact Us</div>
+						<p class="lead text-block text-center">Elekeen is a supplier of top quality down & feather filling material for down jacket manufacturing.</p>
+						<p class="text-block">Combining 25 years of experience in down feather material processing and garment manufacturing, we offer our expert services to help you control the quality of your garment production.</p>
+						<p class="text-block">Whether you are a small boutique brand trying to keep it simple,  or a manager of a wide distributed supply chain, we can help you.</p>
+						
+						<div class="text-center">
+							<!-- <button type="button" class="btn btn-outline btn-lg btn-primary" id="contactbtn">Contact Us</button> -->
+							<a href="mailto:info@elekeen.com" class="btn btn-outline btn-lg btn-primary" style="padding-left: 45px; padding-right: 45px;">Email Us</a>
 						</div>
-					</div><!-- col-sm-8 -->
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="product jumbotron" id="products">
+			<div class="material">
+				<h2 class=" white text-center">From all over the world</h2>
+				<div class="container">
+					<div class="text-center">
+						<div class="row countries">
+							<div class="col-sm-2 col-sm-offset-2 col-xs-6"><img src="img/USA.png" alt=""><p>USA</p></div>
+							<div class="col-sm-2 col-sm-offset-0 col-xs-6"><img src="img/Germany.png" alt=""><p>Germany</p></div>
+							<div class="col-sm-2 col-sm-offset-0 col-xs-6"><img src="img/France.png" alt=""><p>France</p></div>
+							<div class="col-sm-2 col-sm-offset-0 col-xs-6"><img src="img/England.png" alt=""><p>England</p></div>						
+						</div>
+						<div class="row countries">
+							<div class="col-sm-2 col-sm-offset-2 col-xs-6"><img src="img/Italy.png" alt=""><p>Italy</p></div>
+							<div class="col-sm-2 col-sm-offset-0 col-xs-6"><img src="img/Spain.png" alt=""><p>Spain</p></div>
+							<div class="col-sm-2 col-sm-offset-0 col-xs-6"><img src="img/Ukraine.png" alt=""><p>Ukraine</p></div>
+							<div class="col-sm-2 col-sm-offset-0 col-xs-6"><img src="img/Brazil.png" alt=""><p>Brazil</p></div>						
+						</div>
+						<div class="row countries">
+							<div class="col-sm-2 col-sm-offset-3 col-xs-6"><img src="img/Bulgaria.png" alt=""><p>Bulgaria</p></div>
+							<div class="col-sm-2 col-sm-offset-0 col-xs-6"><img src="img/Hungary.png" alt=""><p>Hungary</p></div>
+							<div class="col-sm-2 col-sm-offset-0 col-xs-6 col-xs-offset-3"><img src="img/Poland.png" alt=""><p>Poland</p></div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-8 col-sm-offset-2">						
+							<p class="text-block white">Duck and Goose down feather are natural byproducts that are also  nature’s insulation material. We source raw unprocessed down feather material from all over the world to provide our customers with product that best fits their needs. Our raw material is processed and washed in our factories in China. </p>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+			<div class="quality">
+				<h2 class=" text-center white">High quality product</h2>
+				<div class="container white">
+					<div class="text-center"> 
+						<div class="row quality-img">
+							<div class="col-sm-2 col-sm-offset-2 col-xs-6 row-margin"><img src="img/sourced.png" alt=""><p>Sourced all over the world</p></div>
+							<div class="col-sm-2 col-xs-6 row-margin"><img src="img/ship.png" alt=""><p>Ship to Elekeen factory</p></div>
+							<div class="col-sm-2 col-xs-6 row-margin"><img src="img/washes.png" alt=""><p>Multiple washes</p></div>
+							<div class="col-sm-2 col-xs-6 row-margin"><img src="img/dried.png" alt=""><p>Specially dried</p></div>
+						</div>
+						<div class="row quality-img">
+							<div class="col-sm-2 col-sm-offset-2 col-xs-6 row-margin"><img src="img/purity.png" alt=""><p>De-dusted for purity</p></div>
+							<div class="col-sm-2 col-xs-6 row-margin"><img src="img/test.png" alt=""><p>Laboratory Testing</p></div>
+							<div class="col-sm-2 col-xs-6 row-margin"><img src="img/storage.png" alt=""><p>Climate controlled storage</p></div>
+							<div class="col-sm-2 col-xs-6 row-margin"><img src="img/customer.png" alt=""><p>Shipped to customer</p></div>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-8 col-sm-offset-2">							
+							<p class="white text-block">We are committed to sourcing and supplying the highest quality down to our customers. Our down feather is washed and processed in our factories in Hangzhou and Anhui China. Our in-house laboratory perform tests on every lot of down we produce, such as Content, Species, Fill Power, Cleanliness (Oxygen, Turbidity) and more. We also send samples to an independent and IDFB-accredited down testing laboratory.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="deliver">
+				<h2 class="white title text-center">Delivered Anywhere</h2>
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-8 col-sm-offset-2">							
+							<p class="text-block white">The garment manufacturing industry is constantly facing new challenges. We work with leading fashion brands that require flexibility in their supply chain to be able to arrange garment production in various countries across South East Asia, such as Vietnam, Indonesia, Myanmar and China.</p>
+						</div>
+					</div>
+				</div>
+			</div>												
+		</section>
+		<section class="customers jumbotron middle" id="customerss">
+			<h2 class="">Customers</h2>
+				<div class="container ">				
+					<div class="row">
+						<div class="customer-logo col-sm-3 col-xs-5 col-sm-offset-0 col-xs-offset-1 row-margin"><img src="img/customer1.png" alt=""></div>
+						<div class="customer-logo col-sm-3 col-xs-5 row-margin"><img src="img/customer2.png" alt=""></div>
+						<div class="customer-logo col-sm-3 col-xs-5 col-sm-offset-0 col-xs-offset-1 row-margin"><img src="img/customer3.png" alt=""></div>
+						<div class="customer-logo col-sm-3 col-xs-5 row-margin"><img src="img/customer4.png" alt=""></div>
+					</div>
+					<div class="row">
+						<div class="customer-logo col-sm-3 col-xs-5 col-sm-offset-0 col-xs-offset-1 row-margin"><img src="img/customer5.png" alt=""></div>
+						<div class="customer-logo col-sm-3 col-xs-5 row-margin"><img src="img/customer6.png" alt=""></div>
+						<div class="customer-logo col-sm-3 col-xs-5 col-sm-offset-0 col-xs-offset-1 row-margin"><img src="img/customer7.png" alt=""></div>
+						<div class="customer-logo col-sm-3 col-xs-5 row-margin"><img src="img/customer8.png" alt=""></div>
+					</div>
+				</div>
+		</section>
+		<section class="contact" id="contacts">
+			<!-- <h4 class="text-center title">Contact Us</h4> -->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4 col-sm-offset-2">
+						<h3>Contact Us</h3>
+					</div>
 					<div class="clearfix"></div>
-				</div><!-- row -->
-			</div><!-- container -->
-		</section><!-- jumbotron -->
-
-		
-
-		<div class="bg bg-ferry jumbotron full-width white">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-8 col-sm-offset-2">
-					<h2 class="text-center" id="products" style="margin-top: 15%;">From all over the world.</h2>
-						<p class="text-block">
-							Duck and Goose down feather are natural byproducts that are also  nature’s insulation material. We source raw unprocessed down feather material from all over the world to provide our customers with product that best fits their needs. Our raw material is processed and washed in our factories in China. 
-						</p>
-						<ul class="bubble-list">
-							<li>
-								<img src="img/bubble-placeholder.jpg" class="img img-reponsive img-circle" width='120px'/>
-								France
-							</li>
-							<li>
-								<img src="img/bubble-placeholder.jpg" class="img img-reponsive img-circle" width='120px'/>
-								Spain
-							</li>
-							<li>
-								<img src="img/bubble-placeholder.jpg" class="img img-reponsive img-circle" width='120px'/>
-								Bulgaria
-							</li>
-							<li>
-								<img src="img/bubble-placeholder.jpg" class="img img-reponsive img-circle" width='120px'/>
-								England
-							</li>
-							<li>
-								<img src="img/bubble-placeholder.jpg" class="img img-reponsive img-circle" width='120px'/>
-								Ukraine
-							</li>
-							<li>
-								<img src="img/bubble-placeholder.jpg" class="img img-reponsive img-circle" width='120px'/>
-								Poland
-							</li>
-							<li>
-								<img src="img/bubble-placeholder.jpg" class="img img-reponsive img-circle" width='120px'/>
-								Hungary
-							</li>
-							<li>
-								<img src="img/bubble-placeholder.jpg" class="img img-reponsive img-circle" width='120px'/>
-								Brazil
-							</li>
-							<li>
-								<img src="img/bubble-placeholder.jpg" class="img img-reponsive img-circle" width='120px'/>
-								USA
-							</li>
-							<li>
-								<img src="img/bubble-placeholder.jpg" class="img img-reponsive img-circle" width='120px'/>
-								Germany
-							</li>
-							<li>
-								<img src="img/bubble-placeholder.jpg" class="img img-reponsive img-circle" width='120px'/>
-								Italy
-							</li>
-
-						</ul>
-					<!-- </div> -->
-					</div><!-- col sm-8 -->
-				</div><!-- row -->
-			</div><!-- container -->
-		</div><!-- jumbotron-->
-
-		<div class="jumbotron quality" style="background: none;">
-			<div class="container">
-			<div class="row">
-				<div class="col-sm-8 col-sm-offset-2">
-					<div class="center">
-						<h2 id="abouts">High quality product.</h2>
-					</div>
-					<p class="lead text-center text-block">
-						We are committed to sourcing and supplying the highest quality down feather material to our customers. 
-					</p>
-					<p class="caption text-block">Our down feather is washed and processed in our factories in Hangzhou and Anhui China. Our in-house laboratory perform tests on every lot of down we produce, such as Content, Species, Fill Power, Cleanliness (Oxygen, Turbidity) and more. We also send samples to an independent and IDFB-accredited down testing laboratory.</p>
-
-					<div>
-						<div class="chart">
-							<img src="img/process-v1.png" alt="">
-						</div>
-					</div>
-
 				</div>
-				
-				<div class="clearfix"></div>
-
-			</div><!-- row -->
-			</div><!-- container -->
-		</div><!-- jumbotron -->
-
-
-
-		<div class="jumbotron full-height bg bg-station" id="delivery">
-			<div class="container white">
 				<div class="row">
-					<div class="col-sm-8 col-sm-offset-2">
-						<h2 class="title" id="products">Delivered Anywhere.</h2>
-						<p>
-							The garment manufacturing industry is constantly facing new challenges. We work with leading fashion brands that require flexibility in their supply chain to be able to arrange garment production in various countries across South East Asia, such as Vietnam, Indonesia, Myanmar and China. 
-						</p>
+					<div class="col-sm-4 col-sm-offset-2">
+
+					
+
+						<h5>Hong Kong Office</h5>
+						<dl class="contacts clearfix">
+							<dt><img src="img/email.png" alt="Email: " width="15"></dt>
+							<dd><a href="mailto:info@elekeen.com">info@elekeen.com</a></dd>
+						</dl>
+						<dl class="contacts clearfix">
+							<dt><img src="img/tel.png" alt="Tel: " width="15"></dt>
+							<dd><a href="tel:+852 28903353">+852 28903353</a></dd>
+						</dl>
+						<dl class="contacts clearfix">
+							<dt><img src="img/address.png" alt="Address: " width="15"></dt>
+							<dd><address>
+								Unit 3A, 103-109 Leighton Road<br>
+								Causeway Bay, Hong Kong
+								</address>
+							</dd>
+						</dl>
 					</div>
+					<div class="col-sm-4 ">
+						<h5 class="">Shanghai Office</h5>
+						<dl class="contacts clearfix">
+							<dt><img src="img/tel.png" alt="Tel: " width="15"></dt>
+							<dd><a href="tel:+86 21 62309230">+86 21 62309230</a></dd>
+						</dl>
+						<dl class="contacts clearfix">
+							<dt><img src="img/address.png" alt="Address: " width="15"></dt>
+							<dd><address>
+								Unit 201B, 98 Yanping Road<br>
+								Jingan District, Shanghai
+								</address>
+							</dd>
+						</dl>
+					</div>
+					<div class="clearfix"></div>
 				</div>
 			</div>
-		</div>
+		</section>
 
-		<div class="customers center" id="customerss">
-			<h2 class="title">Our Customers</h2>
-		</div>
-		<div class="contact center" id="contacts">
-			<h2 class="title">Contact Us</h2>
-			<div>
-				<div>
-					<img src="img/address.png" alt="">
-					<p>Hong Kong address: Unit 3A, 103-109 Leighton Road, Causeway Bay</p>
-					<p>Shanghai address: Unit 201B, 98 Yanping road, Jingan district, Shanghai</p>
-				</div>
-				<div>
-					<img src="img/tel.png" alt="">
-					<p>Hong Kong tel: +852 28903353</p>
-					<p>Shanghai tel: +86 21 62309230</p>
-				</div>
-				<div>
-					<img src="img/email.png" alt="">
-					<p>Hong Kong email: info@elekeen.com</p>
-					<p>Shanghai email: shanghai@elekeen.com</p>
-				</div>
-			</div>
-		</div>
-		<div class="foot"></div>
+		<footer class="foot white text-center">
+			<p style="padding-top: 15px;"><small>© 2014 ELEKEEN LTD</small></p>
+		</footer>
 	</body>
 </html>
