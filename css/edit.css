@@ -70,6 +70,22 @@
 }
 /*button*/
 /*response*/
+	/*background*/
+@media(max-width: 768px){
+	.home{
+		background-image: url(../img/home-bg-mini.jpg);	
+	}
+	.material{
+		background-image: url(../img/ferry-duck-mini.jpg);
+	}
+	.deliver{
+		background-image: url(../img/trainstation-mini.jpg);
+	}
+	.quality-img>div{
+		height: 150px;
+	}
+}
+	/*background*/
 @media(max-width: 768px) and (min-width: 480px){
 	/*home*/
 	.home h1{
@@ -93,20 +109,16 @@
 		font-size: 48px;
 	}
 	/*home*/
+	/*quality*/
+	.quality-img>div>p{
+		font-size: 14px;
+	}
+	/*quality*/
 	/*customers*/
 	.customer-logo>img{
 		width: 100%;
 	}
 	/*customers*/
-	/*quality*/
-	.quality-img>div>img{
-		max-width: 100px;
-		width: 100%;
-	}
-	.quality-img>div>p{
-		font-size: 18px;
-	}
-	/*quality*/
 	/*contact*/
 	.contact-text>p{
 		font-size: 14px;
